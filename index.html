@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link of css file -->
+    <link rel="stylesheet" href="./index.css" />
+    <!-- fav-icon -->
+    <link rel="shortcut icon" href="./assets/fav.png" type="image/x-icon" />
+    <script src="https://kit.fontawesome.com/8f11b0e7bc.js" crossorigin="anonymous"></script>
+    <title>Alarm Clock</title>
+
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="img/favicon.png">
+    
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.1.0/moment.min.js"></script>
+  </head>
+  <body>
+    <!-- Alarm clock div -->
+    <main>
+      <div class="content">
+
+        <div id="aclock">
+          <img src="https://github.com/antoniocapelo/quickies/blob/master/analog-clock/images/secondHand.png?raw=true" id="secondhand">
+          <img src="https://github.com/antoniocapelo/quickies/blob/master/analog-clock/images/minuteHand.png?raw=true" id="minutehand">
+          <img src="https://github.com/antoniocapelo/quickies/blob/master/analog-clock/images/hourHand.png?raw=true" id="hourhand">
+        </div>
+      
+      </div>
+      <div id="contents1">
+      <h1>Alarm Clock</h1>
+      <!-- to show the current time -->
+      <p class="timer"></p>
+      <!-- adding inputs -->
+      <form action="">
+        <div class="input-box" >
+          <!-- input for hours -->
+          <input
+            type="number"
+            max="12"
+            min="1"
+            id="hours"
+            required
+            value="00"
+          />
+          <!-- input for minutes -->
+          <input
+            type="number"
+            max="59"
+            min="0"
+            id="minutes"
+            required
+            value="00"
+          />
+          <!-- input for seconds -->
+          <input
+            type="number"
+            max="59"
+            min="0"
+            id="seconds"
+            required
+            value="00"
+          />
+          <!-- input of zone -->
+          <select id="zone" name="timeZone">
+            <option value="am">am</option>
+            <option value="pm">pm</option>
+          </select>
+        </div>
+        <!-- buttons -->
+        <div class="button-container">
+          <button type="submit" id="setAlarm">Set Alarm</button>
+          <button type="button" id="stop">Stop</button>
+        </div>
+      </form>
+      <!-- containers for rendering alarms -->
+      <h1>Alarms</h1>
+      <div class="container"></div>
+
+    </div>
+    </main>
+    
+    <!-- Ion Icons file -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- link of index.js file -->
+    <script src="./index.js"></script>
+
+    
+  </body>
+  <footer>
+    <h1 style="color: aliceblue;">Copyrights <i class="fa-regular fa-copyright"></i> belongs to Sachin</h1>
+  </footer>
+</html>
